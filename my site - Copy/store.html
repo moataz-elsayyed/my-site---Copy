@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codc</title>
+    <style>
+        body{
+            background-color: #36292c;
+            color: #fff;
+            font-family:'Amiri', serif;
+        }
+        .b2{
+            background-color: #36292c;
+            width: 100px;
+            height: 30px;
+            border: #f2fc9f solid 1px;
+            text-decoration: fff;
+            color: #fff;
+            cursor: pointer;
+            font-size: medium;
+            font-style: bold;
+            box-shadow:0px 0px 10px  white;
+            transition: 1s;
+            border-radius: 5px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            margin-right: 100px;
+        }
+        .b2:hover{
+            background-color: cyan;
+            transform: scale(1.3);
+            color: black;
+        }
+        .b3{
+            background-color: #36292c;
+            width: 100px;
+            height: 30px;
+            border: #f2fc9f solid 1px;
+            text-decoration: fff;
+            color: #fff;
+            cursor: pointer;
+            font-size: medium;
+            font-style: bold;
+            box-shadow:0px 0px 10px  white;
+            transition: 1s;
+            border-radius: 5px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+        .b3:hover{
+            background-color: cyan;
+            transform: scale(1.3);
+            color: black;
+        }
+        .nav_bar{
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            position:absolute;
+            bottom: 85px;
+            bottom: 340px;
+            left: 1250px;
+            }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            bottom: 0px;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            bottom:90px ;
+            left: 1158px;
+            }
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+            .bord{
+                border-bottom: solid #f2fc9f 1.5px;
+                width: 90%;
+                margin: auto;
+                box-shadow: cyan 0px 0px 3px;
+                animation-name: exe;
+                animation-duration: 4s;
+                animation-direction:alternate-reverse;
+            }
+            @keyframes exe {
+                from{width: 90%;}
+                to{width: 0%;}
+            }
+            .txt2{
+                animation-name: txt;
+                animation-delay: 5;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                font-size: 50px;
+                transition: 2s;
+            }
+            .txt2:hover{
+                transform: scale(1.6);
+                transform: rotate(360deg);
+            }
+            img{
+                border-radius: 30px 30px 0px 0px;
+                transition: 2s;
+            }
+            .bu1{
+            background-color: #36292c;
+            width: 100px;
+            height: 30px;
+            border: #f2fc9f solid 1px;
+            text-decoration: fff;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-size: medium;
+            font-style: bold;
+            box-shadow:0px 0px 10px  white;
+            transition: 1s;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            animation-name: big;
+            animation-duration: 3sec;
+            animation-iteration-count:infinite ;
+           animation-direction:alternate-reverse ;
+        }
+        @keyframes big {
+        }
+        .bu1:hover{
+            background-color: cyan;
+            transform: scale(1.3);
+            color: black;
+        }
+            
+            del{
+                color:yellow;
+                border: grey solid 1px;
+                background-color: rgba(128, 128, 128, 0.618);
+                border-radius: 4px;
+            }
+            .c1{
+               display: flex;
+            }
+            .c2{
+                display: flex;
+                margin-bottom: 30px;
+            }
+            .s1{
+               border: #f2fc9f solid 1px;
+               border-radius: 30px;
+               width: 250px;
+               transition: 2s;
+               margin-top: 50px;
+               margin-left: 270px;
+               margin-right: 300px;
+            }
+            .s2{
+               border: #f2fc9f solid 1px;
+               border-radius: 30px;
+               width: 250px;
+               transition: 2s;
+               margin-top: 50px;
+            }
+            .s3{
+               border: #f2fc9f solid 1px;
+               border-radius: 30px;
+               width: 250px;
+               transition: 2s;
+               margin-top: 50px;
+               margin-left: 270px;
+               margin-right: 300px;
+            }
+            .s4{
+               border: #f2fc9f solid 1px;
+               border-radius: 30px;
+               width: 250px;
+               transition: 2s;
+               margin-top: 50px;
+            }
+            .cn{
+                display: flex;
+                margin-top: 30px;
+            }
+            .ord1{
+                border: #f77754 solid 2px;
+                background-color: #f77754;
+                border-radius: 20px;
+                width: 200px;
+                height: 200px;
+                color: black;
+                align-items: center;
+                text-align: center;
+                margin-right: 200px;
+                margin-left: 370px;
+            }
+            .ord2{
+                border: #018790 solid 2px;
+                background-color: #018790;
+                border-radius: 20px;
+                width: 200px;
+                height: 200px;
+                color: black;
+                align-items: center;
+                text-align: center;
+            }
+            p{
+                font-size:20px;
+                text-align: center;
+            }
+            .cart{
+                background-color: wheat;
+                transition: 0.5s;
+                border-radius: 4px;
+                border: none;
+                margin-bottom: 9px;
+                cursor: pointer;
+            }
+            .cart:hover{
+                background-color: #04AA6D;
+            }
+            .num{
+                background-color:#f77754 ;
+                border: none;
+                font-size: larger;
+                width: 60px;
+                margin-left: 50px;
+                color: black;
+            }
+            .ad{
+                border: #f2fc9f double 4px;
+                width: 210px;
+                height: 210px;
+                margin-right: 1100px;
+                margin-top: -50px;
+                border-radius: 10px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <p class="txt2">كودك</p>
+            <div class="ad">
+                <h3>منطقه اعلانيه</h3>
+                <p>يمكنك وضع اعلانك هنا تواصل معنا <br>سعر الخدمه 20 جنيه لمده ثلاث ايام</p>
+            </div>
+            <div class="nav_bar">   
+                <button class="b2"> ما الجديد</button>
+                <button class="b3" onclick="location.href='sales.html'"> العروض</button>
+            </div>
+        </center>
+        <div class="dropdown">
+            <button class="dropbtn">تواصل معنا</button>
+            <div class="dropdown-content">
+              <a href="#">+201123641474</a>
+              <a href="#">الواتساب</a>
+
+            </div>
+          </div>
+          <div class="bord"></div>
+    </header>
+    <main>
+        <center>
+        <div class="container">
+            <div class="c1">
+                <nav class="s1">
+                    <img src="Cartoon-illustration-website-building-vector.webp" alt="" width="250px">
+                    <h3><b>انشاء موقع الكتروني</b></h3>
+                    <span>100 <sup><del>150</del></sup></span><br>
+                    <button class="bu1">طلب</button><br>
+                    <button class="cart" onclick="incrementValue()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg></button>
+                </nav>
+                <nav class="s2">
+                    <img src="1200px-Facebook_logo_36x36.svg.webp" alt="" width="250px">
+                    <h3><b> خدمات الفيسبوك</b></h3>
+                    <span>50 <sup><del>75</del></sup></span> <br>
+                    <button class="bu1">المزيد</button><br>
+                    <button class="cart" onclick="incrementValue()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg></button>
+                </nav>
+            </div>
+            <div class="c2">
+                <nav class="s3">
+                    <img src="Animated-Ads-Maker-Mango-Animation-Maker.png" alt="" width="250px" height="187px">
+                    <h3><b> انشاء اعلان  </b></h3>
+                    <span>75 <sup><del></del></sup></span> <br>
+                    <button class="bu1">المزيد</button><br>
+                    <button class="cart" onclick="incrementValue()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg></button>
+                </nav>
+                <nav class="s4">
+                    <img src="excel.jpg" alt="" width="250px">
+                    <h3><b> خدمات الاكسيل</b></h3>
+                    <span>50 <sup><del></del></sup></span> <br>
+                    <button class="bu1">المزيد</button><br>
+                    <button class="cart" onclick="incrementValue()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg></button>
+                </nav>               
+                
+            </div>
+        </div>
+        </center>
+
+
+        <div class="bord"></div>
+        <div class="cn">
+            <div class="ord1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                  <h3 class="o1t">
+                    الحقيبه
+                  </h3>
+                  <input type="text" id="number" value="0" class="num" disabled/>
+            </div>
+            <div class="ord2"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
+                    <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+                    <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <h3 class="o2t">التخفيضات</h3>
+                  <p>2</p>
+            </div>
+        </div>
+
+
+    </main>
+    <script>
+       function incrementValue()
+    {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+    </script>
+</body>
+</html>
